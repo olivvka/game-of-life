@@ -1,0 +1,142 @@
+ 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&subset=latin-ext');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+font-family: 'Roboto',  sans-serif;
+ background: #efdcda;
+ 
+
+}
+
+
+.text {
+    font-size: 2rem;
+  fill: none;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+.text:nth-child(5n + 1) {
+  stroke: #ffa384;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #e88d72;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+.text:nth-child(5n + 3) {
+  stroke: #543855;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+.text:nth-child(5n + 4) {
+  stroke: #ff8882;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+.text:nth-child(5n + 5) {
+  stroke: #f2be3d;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+ 
+ 
+
+svg {
+  display: flex;
+   justify-content: center
+  
+}
+
+
+
+.controls{
+      display: flex;
+   justify-content: center;
+   
+    
+}
+
+
+ 
+
+#gridContainer {
+      display: flex;
+    padding-bottom: 10px;
+     justify-content: center;
+}
+
+table {
+    background-color:#f9e1dc;
+    border-spacing: 0;
+}
+
+td {
+    border: 0.5px solid #edd1ca;
+   
+    width: 15px;
+    height: 15px;
+}
+
+ 
+#start,
+#clear,
+#random {
+        margin: 10px;
+    padding: .75em;
+     border: none;    
+background: #f9e1dc; 
+  
+  color: #543855;
+
+}
+
+td.dead {
+    background-color: transparent;
+}
+
+td.live {
+    background-color: #543855;
+    
+}
+
+ 
+#start:hover,
+#clear:hover,
+#random:hover {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9e1dc+0,f9e1dc+54,efd6d2+97 */
+background: #f9e1dc; /* Old browsers */
+background: -moz-linear-gradient(top,  #f9e1dc 0%, #f9e1dc 54%, #efd6d2 97%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f9e1dc 0%,#f9e1dc 54%,#efd6d2 97%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f9e1dc 0%,#f9e1dc 54%,#efd6d2 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9e1dc', endColorstr='#efd6d2',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+ 
+ 
